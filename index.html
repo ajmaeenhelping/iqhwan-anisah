@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="tyZcNdZJ8gYlaUMKbv3jYyIHNja7peQtDOUJ70vv">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LCBDTMKX5Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-LCBDTMKX5Q');
+    </script>
+
+    <!--Open Graph Metatag-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Iqhwan & Anisah" />
+    <meta property="og:description" content="15 September 2024 | Majlis Persandingan">
+    <meta property="og:image" content="https://hub.kadkahwindigital.my/images/kkd-preview.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <meta property="og:url" content="https://hub.kadkahwindigital.my/theme/preview/tsvetok" />
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#2dc8ff">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#2dc8ff">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2dc8ff">
+
+    <title>Ikatan Cinta Iqhwan & Anisah</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://hub.kadkahwindigital.my/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://hub.kadkahwindigital.my/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/venobox@2.0.4/dist/venobox.min.css" type="text/css"
+        media="screen" />
+
+    <style type="text/css">
+        @font-face {
+            font-family: "Primary";
+            src: url("https://hub.kadkahwindigital.my/theme/fonts/berkshire_swash.ttf");
+        }
+
+        @font-face {
+            font-family: "Secondary";
+            src: url("https://hub.kadkahwindigital.my/theme/fonts/rancho.ttf");
+        }
+
+        body {
+            font-family: "Outfit";
+            background-attachment: fixed;
+        }
+
+        .design-page {
+            color: #B6516D;
+        }
+
+        .design-text-primary {
+            font-family: "Primary";
+            text-transform: capitalize;
+        }
+
+        .design-text-secondary {
+            font-family: "Secondary";
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2dc8ff',
+                        prime: '#00aae6',
+                    }
+                }
+            },
+            darkMode: 'class',
+        }
+    </script>
+
+    <script type="text/javascript">
+        // Set the date we're counting down to
+        var countDownDate = new Date("15 September 2024").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element
+            document.getElementById("text_days").innerHTML = days;
+            document.getElementById("text_hours").innerHTML = hours;
+            document.getElementById("text_seconds").innerHTML = seconds;
+            document.getElementById("text_seconds").innerHTML = seconds;
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown-block").setAttribute("class", "text-center");
+                document.getElementById("countdown-block").innerHTML = "MAJLIS TELAH BERLANGSUNG";
+            }
+        }, 1000);
+    </script>
+
+    <!-- Livewire Styles --><style >[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}[x-cloak] {display: none;}</style>
+
+    <!-- Matomo -->
+    <script>
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u = "//analytics.bookklik.com/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '2']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.async = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
+</head>
+
+<body class="bg-gray-200">
+    <div class="max-w-sm mx-auto bg-gray-100 w-full flex items-center justify-center shadow-lg border-b border-gray-200 design-text-secondary design-page lg:rounded-xl lg:overflow-hidden lg:my-3"
+        data-aos="zoom-in-up" data-aos-duration="1000">
+        <img src="https://hub.kadkahwindigital.my/theme/tsvetok/bg_primary.jpg" class="w-full" />
+        <div class="flex flex-col items-center absolute max-w-xs w-full px-7">
+            <p class="mb-6">
+                                    WALIMATULURUS
+                            </p>
+
+            <h1 class="text-4xl design-text-primary">
+                                    Anisah
+                            </h1>
+            <p>&</p>
+            <h1 class="text-4xl design-text-primary">
+                                    Iqhwan
+                            </h1>
+            <h3 class="mt-6 text-xl">15 September 2024</h3>
+            <h4 class="mb-6">13 Syawal 1440</h4>
+            <h3 class="text-xl text-center">
+                No 23 Taman Tan Sri Megat Junid, Kg Bukit Chawi, 36800, Kg Gajah Perak
+            </h3>
+        </div>
+    </div>
+
+
+    <div wire:snapshot="{&quot;data&quot;:{&quot;show_ads&quot;:false,&quot;advertisment&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;HZsH4VMZSZ4TWyGzEiPU&quot;,&quot;name&quot;:&quot;cards.advertisment-section&quot;,&quot;path&quot;:&quot;theme\/preview\/tsvetok&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;973c79f53a0e8874e3cc90c9d9026ce1f5f61d731203b925547206a81451284c&quot;}" wire:effects="[]" wire:id="HZsH4VMZSZ4TWyGzEiPU">
+    </div>
+
+    <div class="max-w-sm mx-auto bg-white w-full flex items-center flex-col text-center shadow-lg py-16 px-4 border-b border-gray-200 design-text-secondary lg:rounded-xl lg:overflow-hidden lg:my-3"
+        data-aos="zoom-in-up" data-aos-duration="1000">
+        <p class="mb-6">Assalamualaikum w.b.t</p>
+
+            <p class="text-lg design-text-primary"> Kami, </p>
+
+
+                            <h2 class="text-xl design-text-primary">Rohizat Bin Ismail</h2>
+                                        <p>&amp;</p>
+                                        <h2 class="text-xl design-text-primary">Norapizah Binti Alias</h2>
+
+
+
+
+
+
+
+
+        <p class="my-4 text-sm">
+            DENGAN SEGALA HORMATNYA MEMPERSILAKAN Y.B. / Y.BHG. TAN SRI / PUAN SRI /
+            DATUK / DATO’/ DATIN / TUAN / PUAN / SAUDARA / SAUDARI KE MAJLIS
+            PERKAHWINAN PUTERI KAMI 
+        </p>
+        <h2 class="text-xl design-text-primary">Nurul Anisah Binti Rohizat</h2>
+        <p>&amp;</p>
+
+        <h2 class="text-xl design-text-primary">Mohamad Iqhwan Ajmaeen bin Farid</h2>
+        <div class="mt-12 flex flex-col">
+            <h6 class="font-bold">TEMPAT</h6>
+            <p class="mb-4">
+                No 23 Taman Tan Sri Megat Junid, Kg Bukit Chawi, 36800, Kg Gajah Perak
+            </p>
+            <h6 class="font-bold">TARIKH</h6>
+            <p class="mb-4">15 September 2024</p>
+            <h6 class="font-bold">MASA</h6>
+            <p class="mb-4">11:00 AM - 03:00  PM</p>
+        </div>
+                    <div class="pt-12">
+                <button id="btn_rsvp"
+                    class="px-4 py-3 bg-prime hover:bg-primary rounded-full w-full text-center text-white border border-2 border-gray-900">
+                    <i class="fas fa-calendar-check mr-2"></i>Saya Akan Hadir<span
+                        class="bg-white text-prime text-sm px-2 py-1 ml-2 rounded-full">RSVP</span>
+                </button>
+            </div>
+            </div>
+
+    <div class="max-w-sm mx-auto bg-gray-100 w-full flex items-center justify-center shadow-lg border-b border-gray-200 design-text-secondary design-page lg:rounded-xl lg:overflow-hidden lg:my-3"
+        data-aos="zoom-in-up" data-aos-duration="1000">
+        <img src="https://hub.kadkahwindigital.my/theme/tsvetok/bg_secondary.jpg" class="w-full" />
+        <div class="flex flex-col items-center absolute max-w-xs w-full px-6">
+            <h2 class="text-xl mb-12">ATURCARA</h2>
+            <table class="table table-borderless"
+                style="color: #B6516D; width: fit-content ;margin: 0 auto;">
+                <tbody>
+                    <tr>
+                        <td class="text-right pb-8">10:00</td>
+                        <td class="pl-8 pb-8">Sambut Tetamu</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right pb-8">12:30</td>
+                        <td class="pl-8 pb-8">Makan Beradap</td>
+                    </tr>
+                    <tr>
+                        <td class="text-right">18:30</td>
+                        <td class="pl-8">Tamat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div wire:snapshot="{&quot;data&quot;:{&quot;show_ads&quot;:false,&quot;advertisment&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;4mQ4PqfzsCopFTa6wg0B&quot;,&quot;name&quot;:&quot;cards.advertisment-section&quot;,&quot;path&quot;:&quot;theme\/preview\/tsvetok&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;95adda7f75f1fecd1b19bef88b54b8420b53af73e4d5c0c7491775bce7fe55f2&quot;}" wire:effects="[]" wire:id="4mQ4PqfzsCopFTa6wg0B">
+    </div>
+
+    <div class="max-w-sm mx-auto bg-white w-full flex items-center flex-col text-center shadow-lg py-16 px-4 border-b border-gray-200 design-text-secondary lg:rounded-xl lg:overflow-hidden lg:my-3"
+        data-aos="zoom-in-up" data-aos-duration="1000">
+        <p class="text-sm mb-6">
+            "Ya Allah Yang Maha Mencipta, Jadikanlah majlis ini majlis yang mendapat
+            keberkatan dan keredhaanMu, kekalkanlah ikatan perkahwinan mereka
+            sepanjang hayat, tetapkanlah kasih sayang antara mereka selagi tidak
+            melebihi kasih padaMu."
+        </p>
+        <p class="text-sm">Aamin, Ya Rabbal A'lamin</p>
+    </div>
+
+    <div class="max-w-sm mx-auto bg-gray-100 w-full flex items-center flex-col text-center shadow-lg py-16 px-4 border-b border-gray-200 design-text-secondary bg-white lg:rounded-xl lg:overflow-hidden lg:my-3"
+        data-aos="zoom-in-up" data-aos-duration="1000">
+        <h2 class="text-xl mb-12">COUNTDOWN</h2>
+                <div class="grid grid-cols-4 w-full" id="countdown-block">
+            <big><span id="text_days">0</span></big>
+            <big><span id="text_hours">0</span></big>
+            <big><span id="text_minutes">0</span></big>
+            <big><span id="text_seconds">0</span></big>
+            <span><small>Hari</small></span>
+            <span><small>Jam</small></span>
+            <span><small>Minit</small></span>
+            <span><small>Saat</small></span>
+        </div>
+    </div>
+
+            <div class="max-w-sm mx-auto bg-gray-100 w-full flex items-center flex-col text-center shadow-lg py-16 px-4 border-b border-gray-200 design-text-secondary bg-white lg:rounded-xl lg:overflow-hidden lg:my-3"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <h2 class="text-xl mb-12">GALLERY</h2>
+
+            <div class="w-full mx-auto">
+
+                <div id="default-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                        <!-- Item 1 -->
+                                                    <a href="https://hub.kadkahwindigital.my/storage/cards/gallery_images/gallery1.jpg"
+                                class="hidden duration-700 ease-in-out bg-gray-300 venobox" data-carousel-item>
+                                <img src="https://hub.kadkahwindigital.my/storage/cards/gallery_images/gallery1.jpg"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                            </a>
+                                                <!-- Item 2 -->
+                                                    <a href="https://hub.kadkahwindigital.my/storage/cards/gallery_images/gallery2.jpg"
+                                class="hidden duration-700 ease-in-out bg-gray-300 venobox" data-carousel-item>
+                                <img src="https://hub.kadkahwindigital.my/storage/cards/gallery_images/gallery2.jpg"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                            </a>
+                                                <!-- Item 3 -->
+                                                    <a href="https://hub.kadkahwindigital.my/storage/cards/gallery_images/gallery3.jpg"
+                                class="hidden duration-700 ease-in-out bg-gray-300 venobox" data-carousel-item>
+                                <img src="https://hub.kadkahwindigital.my/storage/cards/gallery_images/gallery3.jpg"
+                                    class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
+                            </a>
+                                            </div>
+                    <!-- Slider indicators -->
+                    <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                            aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                            aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false"
+                            aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button"
+                        class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-prev>
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7"></path>
+                            </svg>
+                            <span class="hidden">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button"
+                        class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+                        data-carousel-next>
+                        <span
+                            class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                            <span class="hidden">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="max-w-sm mx-auto bg-gray-100 w-full flex items-center flex-col text-center shadow-lg py-16 px-4 border-b border-gray-200 design-text-secondary bg-white lg:rounded-xl lg:overflow-hidden lg:my-3"
+            data-aos="zoom-in-up" data-aos-duration="1000">
+            <h2 class="text-xl mb-12">VIDEO LAGU</h2>
+                        <iframe class="w-full aspect-video rounded-lg overflow-hidden" src="https://www.youtube.com/embed/kRji9VjOB0w?autoplay=1"
+                frameborder="0"
+                allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+    <!-- <div class="max-w-sm mx-auto bg-gray-100 w-full flex items-center flex-col text-center shadow-lg py-16 px-4 border-b border-gray-200 bg-white lg:rounded-xl lg:overflow-hidden lg:my-3"
+        data-aos="zoom-in-up" data-aos-duration="1000">
+        <p class="mb-2 text-xs font-bold">POWERED BY</p>
+        <a href="https://hub.kadkahwindigital.my">
+            <img src="https://hub.kadkahwindigital.my/images/navbar_brand.svg" class="w-full h-12" />
+        </a>
+        <p class="my-4">Follow Us</p>
+        <div class="grid grid-cols-3 text-4xl gap-8">
+            <a href="https://www.facebook.com/kadkahwindigital" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/kaddigital" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/kadkahwindigital.my/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div> -->
+
+    <div class="w-full h-16"></div>
+
+    <div class="fixed w-full bg-gray-900 z-10 bottom-0">
+        <div class="h-16 max-w-sm mx-auto grid grid-cols-5 text-white">
+            <div id="btn_calendar"
+                class="flex items-center justify-center flex-col hover:bg-black cursor-pointer grow">
+                <div class="mb-2 w-4 h-4 text-white">
+                    <i class="fas fa-calendar-check"></i>
+                </div>
+                <p class="text-xs">Calendar</p>
+            </div>
+            <div id="btn_location"
+                class="flex items-center justify-center flex-col hover:bg-black cursor-pointer grow">
+                <div class="mb-2 w-4 h-4 text-white">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <p class="text-xs">Location</p>
+            </div>
+            <div id="btn_chatbot" class="flex items-center justify-center flex-col cursor-pointer grow relative" style="visibility:hidden">
+                <div class="w-full absolute -top-6 left-0 flex justify-center">
+                    <div
+                        class="flex items-center justify-center w-12 h-12 bg-prime hover:bg-primary rounded-full border-2 border-gray-900 overflow-hidden">
+                        <img src="https://hub.kadkahwindigital.my/images/chat_ai_kkd_profile.png" class="object-cover" />
+                    </div>
+                </div>
+                <div class="mb-2 w-4 h-4 text-white"></div>
+                <p class="text-xs text-primary font-bold">Chat AI</p>
+            </div>
+            <div id="btn_money_gift"
+                class="flex items-center justify-center flex-col hover:bg-black cursor-pointer grow">
+                <div class="mb-2 w-4 h-4 text-white">
+                    <i class="fas fa-hand-holding-usd"></i>
+                </div>
+                <p class="text-xs">Money Gift</p>
+            </div>
+            <div id="btn_contacts"
+                class="flex items-center justify-center flex-col hover:bg-black cursor-pointer grow">
+                <div class="mb-2 w-4 h-4 text-white">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <p class="text-xs">Contacts</p>
+            </div>
+        </div>
+    </div>
+
+    <div
+        class="hidden fixed kkd-backdrop w-full h-full bg-gray-800 bg-opacity-90 top-0 z-20 flex flex-col justify-end px-4">
+
+        <div id="modal_rsvp"
+            class="max-w-sm w-full rounded-2xl bg-white mx-auto mb-8 shadow-lg flex flex-col items-center hidden overflow-hidden">
+            <div wire:snapshot="{&quot;data&quot;:{&quot;card&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Card&quot;,&quot;key&quot;:-101,&quot;s&quot;:&quot;mdl&quot;}],&quot;name&quot;:null,&quot;phone_no&quot;:null,&quot;people_no&quot;:null,&quot;timeslots&quot;:null},&quot;memo&quot;:{&quot;id&quot;:&quot;VB4LLW5g7C5b47jszDET&quot;,&quot;name&quot;:&quot;cards.attendance-modal&quot;,&quot;path&quot;:&quot;theme\/preview\/tsvetok&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;2defc3d931712b05e93a0ea1ec141db46dba4c85b022803e60688ba0ed4b3db2&quot;}" wire:effects="[]" wire:id="VB4LLW5g7C5b47jszDET" class="flex flex-col max-w-sm w-full">
+    <div class="px-4 py-2 text-center bg-prime text-white w-full">Nyatakan Kehadiran Anda</div>
+
+    <div class="p-4 w-full relative">
+                    <div class="absolute bg-gray-800 bg-opacity-70 w-full h-full top-0 left-0 flex items-center justify-center backdrop-blur-sm p-8">
+                <div class="grid grid-cols-1 w-full gap-4 text-center">
+                    <p class="text-white mb-4">Sila log masuk untuk daftar kehadiran</p>
+                    <button type="button" class="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-500 rounded-lg font-semibold text-gray-700 dark:text-gray-300 tracking-widest shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 disabled:opacity-25 transition ease-in-out duration-150 justify-center" onclick="location.href='https://hub.kadkahwindigital.my/auth/facebook'">
+    <i class="fab fa-facebook mr-2"></i>Facebook
+</button>
+                    <button type="button" class="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-500 rounded-lg font-semibold text-gray-700 dark:text-gray-300 tracking-widest shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 disabled:opacity-25 transition ease-in-out duration-150 justify-center" onclick="location.href='https://hub.kadkahwindigital.my/auth/twitter'">
+    <i class="fab fa-twitter mr-2"></i>Twitter
+</button>
+                    <button type="button" class="inline-flex items-center px-6 py-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-500 rounded-lg font-semibold text-gray-700 dark:text-gray-300 tracking-widest shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 disabled:opacity-25 transition ease-in-out duration-150 justify-center" onclick="location.href='https://hub.kadkahwindigital.my/auth/google'">
+    <i class="fab fa-google mr-2"></i>Google
+</button>
+                </div>
+            </div>
+                <p class="text-sm">Nama</p>
+        <input class="mb-4 p-2 bg-gray-100 w-full rounded-lg" type="text" wire:model="name" required />
+        <p class="text-sm">No Telefon</p>
+        <input class="mb-4 p-2 bg-gray-100 w-full rounded-lg" type="tel" wire:model="phone_no" required />
+        <p class="text-sm">Jumlah Hadir</p>
+        <input class="mb-4 p-2 bg-gray-100 w-full rounded-lg" type="number" wire:model="people_no" required />
+        <p class="text-sm">Slot Masa</p>
+        <select class="mb-4 p-2 bg-gray-100 w-full rounded-lg" name="timeslots" wire:model="timeslots" id="timeslots"
+            required>
+
+                                            <option >10:00am - 11:00am</option>
+                                                                <option >11:00am - 12:00pm</option>
+                                                                <option >12:00pm - 01:00pm</option>
+                                                                <option >01:00pm - 02:00pm</option>
+                                                                <option >02:00pm - 03:00pm</option>
+                                                                <option >03:00pm - 04:00pm</option>
+                                                                <option >04:00pm - 05:00pm</option>
+                                                                <option >05:00pm - 06:00pm</option>
+
+                                    </select>
+        <button type="button"
+            class="py-3 px-6 bg-gray-800 hover:bg-gray-900 rounded-lg w-full text-center mt-4 text-white"
+            wire:click="save">
+                            HADIR         </button>
+    </div>
+</div>
+        </div>
+
+        <div id="modal_calendar"
+            class="max-w-sm w-full rounded-2xl p-4 bg-white mx-auto mb-8 shadow-lg flex flex-col items-center hidden">
+            <h1 class="text-3xl font-bold">15/09/2024</h1>
+            <h6 class="mb-4">11:00 AM - 03:00  PM</h6>
+                        <button id="btn-add-to-calendar" type="button"
+                class="p-4 bg-gray-200 hover:bg-gray-300 rounded-lg w-full text-center"
+                onclick="window.open('https://calendar.google.com/calendar/r/eventedit?text=Mohamad+Iqhwan+Ajmaeen+bin+Farid+%26+Nurul+Anisah+Binti+Rohizat&dates=20240915T110000/20240915T150000&details=Mohamad+Iqhwan+Ajmaeen+bin+Farid+%26+Nurul+Anisah+Binti+Rohizat%0A%0AAlamat:+No+23+Taman+Tan+Sri+Megat+Junid+Kg+Bukit+Chawi+36800+Kg+Gajah+Perak&location=No+23+Taman+Tan+Sri+Megat+Junid+Kg+Bukit+Chawi+36800+Kg+Gajah+Perak&sf=true&output=xml', '_blank')">
+                <i class="fas fa-calendar-plus mr-2"></i>Add to Calendar    
+            </button>
+        </div>
+
+        <div id="modal_location"
+            class="max-w-sm w-full rounded-2xl p-4 bg-white mx-auto mb-8 shadow-lg flex flex-col items-center hidden">
+                            <h6 class="mb-4 text-xl text-center">No 23 Taman Tan Sri Megat Junid, Kg Bukit Chawi, 36800, Kg Gajah Perak</h6>
+                <div class="grid grid-cols-2 w-full">
+                    <a href="https://goo.gl/maps/NVQQj426M6Xsjk3PA"
+                        class="p-4 bg-gray-200 hover:bg-gray-300 rounded-l-lg w-full text-center">
+                        <i class="fas fa-map-marker-alt mr-2"></i>Maps
+                    </a>
+                    <a href="https://waze.com/ul?q=5.315160, 100.443356&navigate=yes&zoom=17"
+                        class="p-4 bg-gray-200 hover:bg-gray-300 rounded-r-lg w-full text-center">
+                        <i class="fab fa-waze mr-2"></i>Waze
+                    </a>
+                </div>
+                    </div>
+
+        <div id="modal_chatbot"
+            class="max-w-sm w-full rounded-2xl bg-white mx-auto mb-8 shadow-lg flex flex-col items-center overflow-hidden hidden">
+            <div wire:snapshot="{&quot;data&quot;:{&quot;card&quot;:[null,{&quot;class&quot;:&quot;App\\Models\\Card&quot;,&quot;key&quot;:-101,&quot;s&quot;:&quot;mdl&quot;}],&quot;reply&quot;:&quot;&quot;},&quot;memo&quot;:{&quot;id&quot;:&quot;CCYSbvOmQ2crmUOXDAs0&quot;,&quot;name&quot;:&quot;chatbot.show-card-modal&quot;,&quot;path&quot;:&quot;theme\/preview\/tsvetok&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;472bbe6e3e934be1a0169edc83681d773b36a588da05db6c2097aa8f33ec6071&quot;}" wire:effects="[]" wire:id="CCYSbvOmQ2crmUOXDAs0" class="flex flex-col max-w-sm w-full">
+    <div class="px-4 py-2 text-center bg-prime text-white w-full flex items-center gap-4">
+        <div class="rounded-full w-12 h-12 bg-white overflow-hidden">
+            <img src="https://hub.kadkahwindigital.my/images/chat_ai_kkd_profile.png" alt="KKD Logo" class="w-full h-full object-contain">
+        </div>
+        <div class="flex flex-col flex-grow text-left">
+            <p>Chat AI KKD</p>
+            <div class="text-xs">Online</div>
+        </div>
+    </div>
+    <div id="chat-container" class="p-4 h-80 overflow-auto">
+
+        <div class="pr-8 pb-2">
+            <div class="p-2 bg-gray-100 rounded-lg max-w-fit mr-auto shadow">
+                <p>Saya adalah Chat AI KKD. Saya boleh membantu anda untuk mendapatkan maklumat.</p>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="p-4 border-t text-sm flex overflow-x-auto space-x-2">
+        <button class="flex-shrink-0 rounded-full px-3 py-1 border border-gray-300 hover:bg-gray-100"
+            wire:click="ask(1)">Bila majlis?</button>
+        <button class="flex-shrink-0 rounded-full px-3 py-1 border border-gray-300 hover:bg-gray-100"
+            wire:click="ask(2)">Dimana majlis?</button>
+        <button class="flex-shrink-0 rounded-full px-3 py-1 border border-gray-300 hover:bg-gray-100"
+            wire:click="ask(3)">Nama pengantin?</button>
+        <button class="flex-shrink-0 rounded-full px-3 py-1 border border-gray-300 hover:bg-gray-100"
+            wire:click="ask(4)">Siapa
+            mengundang?</button>
+        <button class="flex-shrink-0 rounded-full px-3 py-1 border border-gray-300 hover:bg-gray-100"
+            wire:click="ask(5)">Saya sesat jalan. Siapa
+            boleh saya hubungi?</button>
+    </div>
+
+    <script>
+        document.addEventListener('livewire:initialized', () => {
+            var elem = document.getElementById('chat-container');
+            Livewire.hook('morph.updated', () => {
+                elem.scrollTo({ top: elem.scrollHeight, behavior: "smooth" })
+            });
+        })
+    </script>
+</div>
+        </div>
+
+        <div id="modal_money_gift"
+            class="max-w-sm w-full rounded-2xl p-4 bg-white mx-auto mb-8 shadow-lg flex flex-col items-center hidden">
+                        <p class="text-sm">QR Code (Perlu ke tak)</p>
+                    </div>
+
+        <div id="modal_contacts"
+            class="max-w-sm w-full rounded-2xl p-4 bg-white mx-auto mb-8 shadow-lg flex flex-col items-center space-y-4 hidden">
+                            <div class="flex items-center w-full">
+                    <p class="flex-grow text-xl">
+                        <i class="fas fa-user-circle mr-2"></i>Apizah
+                    </p>
+                    <div class="grid grid-cols-2 text-xl">
+                        <a href="tel:0125285761"
+                            class="w-12 h-12 bg-gray-200 hover:bg-gray-300 rounded-l-lg flex items-center justify-center">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/60125285761"
+                            class="w-12 h-12 bg-gray-200 hover:bg-gray-300 rounded-r-lg flex items-center justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                                        <div class="flex items-center w-full">
+                    <p class="flex-grow text-xl">
+                        <i class="fas fa-user-circle mr-2"></i>Rohizat
+                    </p>
+                    <div class="grid grid-cols-2 text-xl">
+                        <a href="tel:0195055987"
+                            class="w-12 h-12 bg-gray-200 hover:bg-gray-300 rounded-l-lg flex items-center justify-center">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://wa.me/60195055987"
+                            class="w-12 h-12 bg-gray-200 hover:bg-gray-300 rounded-r-lg flex items-center justify-center">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                                </div>
+
+        <div id="btn_close"
+            class="w-12 h-12 bg-red-600 border-2 flex items-center justify-center text-white border-white rounded-full shadow-lg mb-2 mx-auto cursor-pointer hover:bg-red-500">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <p class="text-white mx-auto mb-4 text-xs uppercase">Close</p>
+    </div>
+
+    <script>
+        new ClipboardJS('.copy');
+
+        AOS.init();
+
+        window.addEventListener("DOMContentLoaded", function() {
+            new VenoBox({
+                selector: ".venobox"
+            });
+        });
+
+        $("#btn_rsvp").click(function() {
+            $(".kkd-backdrop").toggleClass("hidden");
+            $("#modal_rsvp").toggleClass("hidden");
+        });
+        $("#btn_calendar").click(function() {
+            $(".kkd-backdrop").toggleClass("hidden");
+            $("#modal_calendar").toggleClass("hidden");
+        });
+        $("#btn_location").click(function() {
+            $(".kkd-backdrop").toggleClass("hidden");
+            $("#modal_location").toggleClass("hidden");
+        });
+        $("#btn_chatbot").click(function() {
+            $(".kkd-backdrop").toggleClass("hidden");
+            $("#modal_chatbot").toggleClass("hidden");
+        });
+        $("#btn_money_gift").click(function() {
+            $(".kkd-backdrop").toggleClass("hidden");
+            $("#modal_money_gift").toggleClass("hidden");
+        });
+        $("#btn_contacts").click(function() {
+            $(".kkd-backdrop").toggleClass("hidden");
+            $("#modal_contacts").toggleClass("hidden");
+        });
+        $("#btn_close").click(function() {
+            $(".kkd-backdrop").toggleClass("hidden");
+            $("#modal_rsvp").addClass("hidden");
+            $("#modal_calendar").addClass("hidden");
+            $("#modal_location").addClass("hidden");
+            $("#modal_contacts").addClass("hidden");
+            $("#modal_money_gift").addClass("hidden");
+            $("#modal_chatbot").addClass("hidden");
+        });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/venobox@2.0.4/dist/venobox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+    <script src="/livewire/livewire.js?id=f41737f6"   data-csrf="tyZcNdZJ8gYlaUMKbv3jYyIHNja7peQtDOUJ70vv" data-uri="/livewire/update" data-navigate-once="true"></script>
+
+</body>
+
+</html>
